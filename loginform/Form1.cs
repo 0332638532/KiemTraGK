@@ -29,7 +29,12 @@ namespace loginform
 
         private void Login_Click(object sender, EventArgs e)
         {
-
+            string username = txtUserName.Text;
+            string password = txtpassword.Text;
+            if (username == "admin" && password == "admin")
+            {
+                MessageBox.Show("Login succesful");
+            }
         }
     }
 }
